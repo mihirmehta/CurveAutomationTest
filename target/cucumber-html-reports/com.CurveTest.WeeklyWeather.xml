@@ -1,0 +1,371 @@
+<testsuite failures="0"
+           name="com/CurveTest/WeeklyWeather.feature"
+           skipped="0"
+           tests="5"
+           time="1.419129">
+   <testcase classname="com.CurveTest.WeeklyWeather"
+             name="Get the hottest day and coldest day of the week"
+             time="1.213008">
+      <system-out>* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'london' .................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'london' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'london' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed</system-out>
+   </testcase>
+   <testcase classname="com.CurveTest.WeeklyWeather"
+             name="Get the hottest day and coldest day of the week"
+             time="0.058009">
+      <system-out>* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'london' .................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'london' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'london' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'paris' ..................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'paris' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'paris' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed</system-out>
+   </testcase>
+   <testcase classname="com.CurveTest.WeeklyWeather"
+             name="Get the hottest day and coldest day of the week"
+             time="0.045505">
+      <system-out>* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'london' .................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'london' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'london' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'paris' ..................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'paris' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'paris' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'bangalore' ................................................. passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'bangalore' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'bangalore' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed</system-out>
+   </testcase>
+   <testcase classname="com.CurveTest.WeeklyWeather"
+             name="Get the hottest day and coldest day of the week"
+             time="0.050007">
+      <system-out>* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'london' .................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'london' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'london' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'paris' ..................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'paris' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'paris' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'bangalore' ................................................. passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'bangalore' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'bangalore' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'penang' .................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'penang' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'penang' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed</system-out>
+   </testcase>
+   <testcase classname="com.CurveTest.WeeklyWeather"
+             name="Get the hottest day and coldest day of the week"
+             time="0.052601">
+      <system-out>* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'london' .................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'london' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'london' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'paris' ..................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'paris' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'paris' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'bangalore' ................................................. passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'bangalore' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'bangalore' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'penang' .................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'penang' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'penang' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed
+* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'tokyo' ..................................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in ', 'tokyo' , 'was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in ', 'tokyo' , 'was : ', coldestdate	, 'with min temperature' , coldesttemp . passed</system-out>
+   </testcase>
+</testsuite>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-3"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"WeeklyWeather[1.1:100]","start":1538,"end":2773,"title":"WeeklyWeather[1.1:100] 01:00:01.538-01:00:02.773 Get the hottest day and coldest day of the week"},{"id":2,"group":1,"content":"WeeklyWeather[1.2:101]","start":2784,"end":2845,"title":"WeeklyWeather[1.2:101] 01:00:02.784-01:00:02.845 Get the hottest day and coldest day of the week"},{"id":3,"group":1,"content":"WeeklyWeather[1.3:102]","start":2853,"end":2901,"title":"WeeklyWeather[1.3:102] 01:00:02.853-01:00:02.901 Get the hottest day and coldest day of the week"},{"id":4,"group":1,"content":"WeeklyWeather[1.4:103]","start":2908,"end":2961,"title":"WeeklyWeather[1.4:103] 01:00:02.908-01:00:02.961 Get the hottest day and coldest day of the week"},{"id":5,"group":1,"content":"WeeklyWeather[1.5:104]","start":2968,"end":3023,"title":"WeeklyWeather[1.5:104] 01:00:02.968-01:00:03.023 Get the hottest day and coldest day of the week"},{"id":6,"group":1,"content":"WeeklyWeather_LA[1:22]","start":3465,"end":3522,"title":"WeeklyWeather_LA[1:22] 01:00:03.465-01:00:03.522 Get the hottest day and coldest day of the week"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

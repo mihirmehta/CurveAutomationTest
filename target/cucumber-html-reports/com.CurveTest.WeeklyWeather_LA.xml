@@ -1,0 +1,33 @@
+<testsuite failures="0"
+           name="com/CurveTest/WeeklyWeather_LA.feature"
+           skipped="0"
+           tests="1"
+           time="0.054182">
+   <testcase classname="com.CurveTest.WeeklyWeather_LA"
+             name="Get the hottest day and coldest day of the week"
+             time="0.054182">
+      <system-out>* def GetDates = Java.type('com.CurveTest.GetDates') ...................... passed
+* def setup = GetDates.initialSetup() ..................................... passed
+* def ToDate = GetDates.getTodaysDate() ................................... passed
+* def StartDate = GetDates.get7DaysAgoDate() .............................. passed
+Given url weather_7day_api ................................................ passed
+And param key = apiKey .................................................... passed
+And param q = 'los angeles' ............................................... passed
+And param dt = StartDate .................................................. passed
+And param end_dt = ToDate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And def result = response ................................................. passed
+And assert response.forecast.forecastday.length == 7 ...................... passed
+* def hottest = ........................................................... passed
+* def coldest = ........................................................... passed
+* def hotindex = call hottest response.forecast.forecastday ............... passed
+* def hottestdate = response.forecast.forecastday[hotindex].date .......... passed
+* def hottesttemp = response.forecast.forecastday[hotindex].day.maxtemp_c . passed
+* def coldindex = call coldest response.forecast.forecastday .............. passed
+* def coldestdate = response.forecast.forecastday[coldindex].date ......... passed
+* def coldesttemp = response.forecast.forecastday[coldindex].day.mintemp_c . passed
+* print 'Hottest date in LA in the last week was: ', hottestdate ,	'with max temperature' , hottesttemp . passed
+* print 'Coldest date in LA in the last week was : ', coldestdate	, 'with min temperature' , coldesttemp . passed</system-out>
+   </testcase>
+</testsuite>
