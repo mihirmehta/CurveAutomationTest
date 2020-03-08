@@ -11,6 +11,8 @@ There are 2 scenarios as part of this repository
 
 Inorder to run the tests, a prerequsite is to have maven installed on the machine where the tests are going to be run.
 
+The test runner file that gets executed is TestRunner.java. There is another test runner file - ApiTestRunner.java. This runner was created to run the test locally from within Eclipse can be ignored. But the one that is relevant here is the TestRunner.java
+
 Once the repository is cloned, the commands to run the tests are as follows
 
 1. Go to the repo directory. Example cd C:/Workspace/CurveTests
